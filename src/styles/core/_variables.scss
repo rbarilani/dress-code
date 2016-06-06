@@ -117,7 +117,7 @@ $dc-debugmessage-color: rgba(255, 255, 0, .9) !default;
 //  = SCAFFOLDING
 //  ---------------------------------------------------------------------------
 
-$dc-body-background-color: $dc-gray70 !default;
+$dc-body-background-color: $dc-white !default;
 $dc-text-color: $dc-gray10 !default;
 
 //  = LINKS
@@ -150,19 +150,19 @@ $dc-mono-font-family: "Menlo", "Monaco", "Consolas", "Courier New", monospace !d
 
 $dc-html-font-size: 62.5% !default;
 $dc-html-line-height: 1 !default;
-$dc-body-font-size: 1.4rem !default;
+$dc-body-font-size: 1.6rem !default;
 $dc-body-line-height: $dc-space150 !default;
 $dc-base-font-family: $dc-sans-font-family !default;
 $dc-alt-font-family: $dc-sans-font-family !default;
 
-$dc-font50: 1.1rem !default;
-$dc-font100: 1.4rem !default;
-$dc-font150: 1.8rem !default;
-$dc-font200: 2.2rem !default;
-$dc-font250: 2.7rem !default;
-$dc-font300: 3.4rem !default;
+$dc-font50: 1.2rem !default;
+$dc-font100: 1.6rem !default;
+$dc-font150: 2rem !default;
+$dc-font200: 2.4rem !default;
+$dc-font250: 2.8rem !default;
+$dc-font300: 3.6rem !default;
 
-$dc-normal-font-weight: 300 !default;
+$dc-normal-font-weight: 100 !default;
 $dc-bold-font-weight: 500 !default;
 
 $dc-headings-font-family: $dc-sans-font-family !default;
@@ -183,7 +183,7 @@ $dc-h4-line-height: 2.4rem !default;
 //  = BORDERS & RADII
 //  ---------------------------------------------------------------------------
 
-$dc-radius100: 2px !default;
+$dc-radius100: 4px !default;
 $dc-radius50: 1px !default;
 $dc-border50: 1px !default;
 $dc-border100: 2px !default;

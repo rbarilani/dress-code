@@ -9,8 +9,8 @@
 @mixin _dc-status {
     &:before {
         display: inline-block;
-        width: 10px;
-        height: 10px;
+        width: 12px;
+        height: 12px;
         margin-right: $dc-space75;
         border-radius: 2px;
         content: "";

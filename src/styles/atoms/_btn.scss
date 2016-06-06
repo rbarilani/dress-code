@@ -3,11 +3,11 @@
 @mixin dc-btn {
     display: inline-block;
     margin-right: $dc-space50;
-    padding: $dc-space100 - .1 $dc-space100;
+    padding: $dc-space125 - .1 $dc-space125;
     transition: box-shadow .2s linear, border-color .2s linear;
-    border: 1px solid $dc-gray50;
+    border: 1px solid $dc-gray60;
     border-radius: $dc-radius100;
-    background: linear-gradient($dc-white, darken($dc-white, 7%));
+    background: $dc-gray80;
     color: $dc-gray10;
     font-size: $dc-body-font-size;
     font-weight: $dc-normal-font-weight;
@@ -16,7 +16,7 @@
     text-decoration: none;
     text-transform: capitalize;
     box-shadow: 0 1px 1px transparent;
-    cursor: default;
+    cursor: pointer;
     vertical-align: top;
 
     &:focus {
@@ -29,10 +29,10 @@
 @mixin dc-btn--no-touch {
     &:hover {
         outline: 0;
-        background: linear-gradient($dc-white, darken($dc-white, 5%));
+        background: $dc-gray80;
         color: $dc-gray10;
         text-decoration: none;
-        box-shadow: 0 1px 1px rgba($dc-black, .2);
+        box-shadow: 0 1px 2px rgba($dc-black, .2);
     }
 
     &:active {
@@ -145,6 +145,7 @@
     background: transparent;
     color: $dc-gray50;
     box-shadow: none;
+    cursor: default;
 }
 
 @mixin dc-btn--disabled--touch {
@@ -177,13 +178,13 @@
 //  ---------------------------------------------------------------------------
 
 @mixin dc-btn--small {
-    padding: $dc-space100 - .1 $dc-space100;
+    padding: $dc-space150 - .1 $dc-space150;
     font-size: 1.4rem;
     @content;
 }
 
 @mixin dc-btn--small--no-touch {
-    padding: $dc-space50 $dc-space75;
+    padding: $dc-space75 + .1 $dc-space100;
     font-size: $dc-font50;
     font-weight: $dc-normal-font-weight;
     text-transform: uppercase;
@@ -203,7 +204,7 @@
 //  ---------------------------------------------------------------------------
 
 @mixin dc-btn--large {
-    padding: $dc-space125 $dc-space125 $dc-space125 + .1;
+    padding: $dc-space150 - .1 $dc-space125;
     font-size: $dc-font150;
     line-height: .8;
 

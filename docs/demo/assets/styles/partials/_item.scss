@@ -2,7 +2,7 @@
 	@include clearfix;
 	margin-bottom: 3rem;
 	padding-bottom: 3rem;
-	border-bottom: 1px solid map-get($dc-colors, light);
+	//border-bottom: 1px solid map-get($dc-colors, light);
 
 	&:last-child {
 		border-bottom: 0;
@@ -27,6 +27,10 @@
 			padding-bottom: 0;
 		}
 	}
+
+	p {
+		margin-bottom: 1.2rem;
+	}
 }
 
 // .f-item-code {
@@ -35,10 +39,13 @@
 
 .f-item-preview {
 	@include clearfix;
+	border: 1px solid $dc-gray70;
+	border-radius: $dc-border150;
+	padding: $dc-space150;
 }
 
 .f-item-border-bottom {
-	border-bottom: 1px solid map-get($dc-colors, light);
+	//border-bottom: 1px solid map-get($dc-colors, light);
 }
 
 .f-item-heading-group {
@@ -48,9 +55,9 @@
 
 h2.f-item-heading {
 	@extend .dc-h2;
-
-	font-weight:500;
+	// font-weight:500;
 	text-transform:uppercase;
+	margin-bottom: 1.2rem;
 }
 
 h3.f-item-heading {
@@ -59,8 +66,8 @@ h3.f-item-heading {
 	// margin-top: $dc-space350;
 	text-transform:uppercase;
 	color:$dc-gray40;
-	border-bottom:1px solid $dc-gray60;
-	margin-bottom: $dc-space75;
+	// border-bottom:1px solid $dc-gray60;
+	margin-bottom: $dc-space50;
     padding-bottom: 0.4rem;
 
 	.sg-section__title + &
@@ -109,12 +116,12 @@ h3.f-item-heading {
 }
 
 .f-item-notes {
-	margin-bottom: $dc-space150;
+	margin-bottom: $dc-space100;
 	font-size: $dc-font100;
-	color: $dc-gray20;
+	color: $dc-gray10;
 
 	p {
-		margin-top: $dc-space50;
+		margin-top: $dc-space50/2;
 	}
 
 	> * {
@@ -122,10 +129,10 @@ h3.f-item-heading {
 
 
 
-		&:before
-		{
-			content: "//";
-			margin-right: $dc-space75;
-		}
+		// &:before
+		// {
+		// 	content: "//";
+		// 	margin-right: $dc-space75;
+		// }
 	}
 }

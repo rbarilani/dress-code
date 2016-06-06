@@ -8,7 +8,7 @@
 
 @mixin dc-input-addon {
 
-    padding: $dc-space75 + .2 $dc-space100 $dc-space75;
+    padding: $dc-space100 $dc-space100 $dc-space75;
     border: 1px solid $dc-gray60;
     background-color: $dc-gray80;
     color: $dc-gray20;
@@ -24,7 +24,7 @@
     &:last-child {
         border-left-width: 0;
         border-top-right-radius: $dc-radius100;
-        border-bottom-left-radius: $dc-radius100;
+        border-bottom-right-radius: $dc-radius100;
     }
 }
 
@@ -41,7 +41,7 @@
 
     &:last-child {
         border-top-right-radius: $dc-radius100;
-        border-bottom-left-radius: $dc-radius100;
+        border-bottom-right-radius: $dc-radius100;
     }
 }
 

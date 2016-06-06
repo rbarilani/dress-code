@@ -99,10 +99,8 @@
 //  -----------------------------------------------------------------------------
 
 @mixin dc-msg--success {
-    // scss-lint:disable ColorVariable
-    border-color: #84e440;
-    background: rgba(#e3ffc7, .95);
-    // scss-lint:enable ColorVariable
+    border-color: $dc-green50;
+    background: $dc-green80;
     color: $dc-green20;
 }
 
@@ -110,8 +108,8 @@
 //  -----------------------------------------------------------------------------
 
 @mixin dc-msg--error {
-    border-color: darken($dc-red70, 5%);
-    background: rgba(desaturate($dc-red70, 10%), .5);
+    border-color: $dc-red70;
+    background: $dc-red80;
     color: $dc-red30;
 }
 
@@ -119,8 +117,8 @@
 //  -----------------------------------------------------------------------------
 
 @mixin dc-msg--warning {
-    border-color: darken($dc-yellow70, 35%);
-    background: rgba($dc-yellow70, .5);
+    border-color: $dc-yellow40;
+    background: $dc-yellow80;
     color: $dc-yellow20;
 }
 

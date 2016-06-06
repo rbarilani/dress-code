@@ -2,11 +2,11 @@
 
 @mixin _dc-input {
     margin-bottom: $dc-space150;
-    padding: $dc-space75 + .1 $dc-space75;
+    padding: $dc-space100;
     transition: box-shadow .2s linear, border-color .2s linear;
     border: 1px solid $dc-gray60;
     border-radius: $dc-radius100;
-    font-size: 1.6rem;
+    font-size: $dc-font100;
     font-weight: $dc-normal-font-weight;
     // scss-lint:disable ColorVariable
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);

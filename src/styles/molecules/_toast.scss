@@ -51,10 +51,8 @@
 }
 
 @mixin dc-toast__content--success {
-    // scss-lint:disable ColorVariable
     border-color: $dc-green50;
     background: $dc-green80;
-    // scss-lint:enable ColorVariable
     color: $dc-green20;
 }
 
@@ -67,7 +65,7 @@
 @mixin dc-toast__content--error {
     border-color: $dc-red70;
     background: $dc-red80;
-    color: $dc-red20;
+    color: $dc-red30;
 }
 
 @mixin dc-toast-animations {

@@ -2,8 +2,9 @@
 // @import "../atoms/divider";
 
 @mixin dc-btn-dropdown {
-    @include dc-cf;
     position: relative;
+    display: inline-block;
+    @include dc-cf;
 }
 
 @mixin dc-btn-dropdown__arrow {
@@ -30,11 +31,12 @@
     display: none;
     position: absolute;
     padding: $dc-space50 0;
+    border: 1px solid $dc-gray60;
     border-radius: $dc-radius100;
     background-color: $dc-white;
-    box-shadow: 0 4px 8px rgba($dc-black, .2);
     z-index: 999;
     list-style-type: none;
+    min-width: 160px;
 
     &::after {
         position: absolute;
@@ -47,14 +49,20 @@
 
 @mixin dc-btn-dropdown__list--down {
     top: 100%;
-    margin-top: 0;
+    margin-top: $dc-space100;
 
     &::after {
+        position: absolute;
         bottom: 100%;
         left: $dc-space150;
-        margin-left: -8px;
-        border: 8px solid transparent;
-        border-bottom-color: $dc-white;
+        width: 12px;
+        height: 12px;
+        margin-left: 8px;
+        transform: rotate(45deg) translateY(.8rem);
+        border-top: 1px solid $dc-gray60;
+        border-left: 1px solid $dc-gray60;
+        background: $dc-white;
+        content: "";
     }
 }
 
@@ -63,11 +71,17 @@
     margin-bottom: $dc-space100;
 
     &::after {
+        position: absolute;
         top: 100%;
         left: $dc-space150;
+        width: 12px;
+        height: 12px;
         margin-left: -8px;
-        border: 8px solid transparent;
-        border-top-color: $dc-white;
+        transform: rotate(45deg) translateY(-.8rem);
+        border-right: 1px solid $dc-gray60;
+        border-bottom: 1px solid $dc-gray60;
+        background: $dc-white;
+        content: "";
     }
 }
 
@@ -166,4 +180,3 @@
         @include dc-btn-dropdown__divider;
     }
 }
-
