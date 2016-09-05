@@ -85,6 +85,7 @@
 
 @mixin dc-table__tr--interactive {
     cursor: pointer;
+
     &:hover {
         background: $dc-blue80;
     }
@@ -124,6 +125,7 @@
     padding-top: $dc-space75 + .1;
     padding-bottom: $dc-space75 + .1;
     white-space: nowrap;
+
     &:first-child {
         padding-left: $dc-space100 / 2;
     }
@@ -190,7 +192,7 @@
     }
 
     .dc-table__th--responsive {
-        @include dc-table__th--responsive
+        @include dc-table__th--responsive;
     }
 
     .dc-table__tr {
