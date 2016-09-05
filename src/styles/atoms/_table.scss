@@ -7,16 +7,11 @@
 }
 
 @mixin _dc-table__td--when-huge-width {
-    padding: $dc-space50 $dc-space50 / 2;
-    line-height: 1.5;
 
-    &:first-child {
-        padding-left: $dc-space100 / 2;
-    }
 }
 
 @mixin _dc-table__tr--spacing-modifier($padding, $child-column-selector : ".dc-table__td") {
-    @include breakpoint($dc-huge-width) {
+    @include breakpoint($dc-large-width) {
         > #{$child-column-selector} {
             padding-top: $padding + .1;
             padding-bottom: $padding + .1;
@@ -30,14 +25,16 @@
     border-radius: 2px;
     background: $dc-white;
     text-align: left;
+}
 
-    @include breakpoint(0 $dc-huge-width - .1) {
+@mixin dc-table--responsive {
+    @include breakpoint(0 $dc-large-width - .1) {
         @include _dc-table-element--is-block;
     }
 }
 
-@mixin dc-table__thead($child-row-selector : ".dc-table__tr") {
-    @include breakpoint(0 $dc-huge-width - .1) {
+@mixin dc-table__thead--responsive($child-row-selector : ".dc-table__tr") {
+    @include breakpoint(0 $dc-large-width - .1) {
         @include _dc-table-element--is-block;
 
         > #{$child-row-selector} {
@@ -50,18 +47,17 @@
     font-weight: $dc-bold-font-weight;
     text-transform: uppercase;
     text-align: left;
+    @include _dc-table__td--when-huge-width;
+}
 
-    @include breakpoint(0 $dc-huge-width - .1) {
+@mixin dc-table__th--responsive {
+    @include breakpoint(0 $dc-large-width - .1) {
         @include _dc-table-element--is-block;
-    }
-
-    @include breakpoint($dc-huge-width) {
-        @include _dc-table__td--when-huge-width;
     }
 }
 
-@mixin dc-table__tbody($child-row-selector : ".dc-table__tr") {
-    @include breakpoint(0 $dc-huge-width - .1) {
+@mixin dc-table__tbody--responsive($child-row-selector : ".dc-table__tr") {
+    @include breakpoint(0 $dc-large-width - .1) {
         @include _dc-table-element--is-block;
     }
 }
@@ -69,8 +65,12 @@
 @mixin dc-table__tr {
     @include dc-cf;
     cursor: default;
+    border-bottom: 1px solid $dc-gray70;
+}
 
-    @include breakpoint(0 $dc-huge-width - .1) {
+@mixin dc-table__tr--responsive {
+
+    @include breakpoint(0 $dc-large-width - .1) {
         @include _dc-table-element--is-block;
 
         position: relative;
@@ -81,15 +81,16 @@
             border-bottom: 0 none;
         }
     }
-
-    @include breakpoint($dc-huge-width) {
-        border-bottom: 1px solid $dc-gray70;
-    }
 }
 
 @mixin dc-table__tr--interactive {
     cursor: pointer;
+    &:hover {
+        background: $dc-blue80;
+    }
+}
 
+@mixin-dc-table__tr--interactive--responsive {
     @include breakpoint(0 $dc-large-width - .1) {
         &:after {
             position: absolute;
@@ -100,12 +101,6 @@
             margin-top: -1.8rem;
             background-image: url("#{$dc-image-path}/svg-icons/arrow-right.svg");
             content: " ";
-        }
-    }
-
-    @include breakpoint($dc-huge-width) {
-        &:hover {
-            background: $dc-blue80;
         }
     }
 }
@@ -124,12 +119,26 @@
 
 @mixin dc-table__td {
     font-weight: $dc-normal-font-weight;
+    padding: $dc-space50 $dc-space50 / 2;
+    line-height: 1.5;
+    padding-top: $dc-space75 + .1;
+    padding-bottom: $dc-space75 + .1;
+    white-space: nowrap;
+    &:first-child {
+        padding-left: $dc-space100 / 2;
+    }
+}
 
-    @include breakpoint(0 $dc-huge-width - .1) {
+@mixin dc-table__td--responsive {
+    @include breakpoint(0 $dc-large-width - .1) {
         @include _dc-table-element--is-block;
 
         padding-left: calc(30% + 12px);
         text-align: left;
+
+        &:first-child {
+            padding-left: calc(30% + 12px);
+        }
 
         &:before {
             display: block;
@@ -143,39 +152,6 @@
             text-transform: uppercase;
             content: attr(data-col);
         }
-    }
-
-    @include breakpoint($dc-large-width $dc-huge-width - .1) {
-        position: relative;
-        width: 50%;
-        padding-left: calc(16% + 12px);
-        float: left;
-
-        &:before {
-            right: 69%;
-        }
-
-        &:nth-child(2) {
-            clear: left;
-        }
-
-        &:first-child {
-            width: 100%;
-            margin-bottom: $dc-space50;
-
-            &:before {
-                right: 84.5%;
-            }
-        }
-    }
-
-    @include breakpoint($dc-huge-width) {
-        @include _dc-table__td--when-huge-width;
-
-        // the added pixels are there to make the rows heights all be multiples of 4
-        padding-top: $dc-space75 + .1;
-        padding-bottom: $dc-space75 + .1;
-        white-space: nowrap;
     }
 }
 
@@ -193,12 +169,16 @@
         @include dc-table;
     }
 
-    .dc-table__tbody {
-        @include dc-table__tbody;
+    .dc-table--responsive {
+        @include dc-table--responsive;
     }
 
-    .dc-table__thead {
-        @include dc-table__thead;
+    .dc-table__tbody--responsive {
+        @include dc-table__tbody--responsive;
+    }
+
+    .dc-table__thead--responsive {
+        @include dc-table__thead--responsive;
     }
 
     .dc-table__item-title {
@@ -209,8 +189,16 @@
         @include dc-table__th;
     }
 
+    .dc-table__th--responsive {
+        @include dc-table__th--responsive
+    }
+
     .dc-table__tr {
         @include dc-table__tr;
+    }
+
+    .dc-table__tr--responsive {
+        @include dc-table__tr--responsive;
     }
 
     .dc-table__tr--tight {
@@ -231,6 +219,10 @@
 
     .dc-table__td {
         @include dc-table__td;
+    }
+
+    .dc-table__td--responsive {
+        @include dc-table__td--responsive;
     }
 
     .dc-table__actions-wrapper {
