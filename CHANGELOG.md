@@ -1,3 +1,54 @@
+<a name="2.0.0-beta.1"></a>
+# [2.0.0-beta.1](https://github.com/zalando/dress-code/compare/2.0.0-beta...v2.0.0-beta.1) (2016-10-28)
+
+
+### Bug Fixes
+
+* **btn:** fix blue text on icon button ([97c554c](https://github.com/zalando/dress-code/commit/97c554c))
+* **demo:** Fix small code issues ([71f4399](https://github.com/zalando/dress-code/commit/71f4399))
+* **dialog:** fix broken overlay in chrome in retina displays ([507e0f5](https://github.com/zalando/dress-code/commit/507e0f5))
+* **select:** align the select dropdown arrow to fixed pixels from right ([3541bb2](https://github.com/zalando/dress-code/commit/3541bb2)), closes [#232](https://github.com/zalando/dress-code/issues/232)
+* **select:** remove top/bottom padding and use height instead to fix height issue for select ([9553f99](https://github.com/zalando/dress-code/commit/9553f99)), closes [#225](https://github.com/zalando/dress-code/issues/225)
+* **tables:** Fix lint issues ([beb4c18](https://github.com/zalando/dress-code/commit/beb4c18))
+* **tables:** table column in responsive mode to have a min height ([7b9884d](https://github.com/zalando/dress-code/commit/7b9884d)), closes [#267](https://github.com/zalando/dress-code/issues/267)
+
+
+### Features
+
+* **cursors:** Use pointer cursor for buttons, checkboxes and radios ([a3cefe9](https://github.com/zalando/dress-code/commit/a3cefe9)), closes [#255](https://github.com/zalando/dress-code/issues/255)
+* **demo:** Improve demo descriptions and structure ([c67daf9](https://github.com/zalando/dress-code/commit/c67daf9)), closes [#231](https://github.com/zalando/dress-code/issues/231)
+* **demo:** Remove https from webfont code example ([83084e4](https://github.com/zalando/dress-code/commit/83084e4))
+* **demo:** Style links as dc-link ([9adf2e2](https://github.com/zalando/dress-code/commit/9adf2e2)), closes [#242](https://github.com/zalando/dress-code/issues/242)
+* **demo:** Various demo improvements ([7d8b8a1](https://github.com/zalando/dress-code/commit/7d8b8a1))
+* **font-cache-busting:** [#203](https://github.com/zalando/dress-code/issues/203) add font cache busting by appending query string based on the package version ([#230](https://github.com/zalando/dress-code/issues/230)) ([af985c4](https://github.com/zalando/dress-code/commit/af985c4))
+* **guidelines:** add date time and number formats. closes [#248](https://github.com/zalando/dress-code/issues/248). closes [#249](https://github.com/zalando/dress-code/issues/249). ([dbbf875](https://github.com/zalando/dress-code/commit/dbbf875))
+* **guidelines:** change order of guidelines in demo menu ([8b3e753](https://github.com/zalando/dress-code/commit/8b3e753))
+* **guidelines:** simplify number format by removing some examples. ([d1e5c9b](https://github.com/zalando/dress-code/commit/d1e5c9b))
+* **guides:** add number format. closes [#249](https://github.com/zalando/dress-code/issues/249) ([e9bba72](https://github.com/zalando/dress-code/commit/e9bba72))
+* **icons:** Add minus icon ([4d8e08b](https://github.com/zalando/dress-code/commit/4d8e08b))
+* **icons:** add triangle up and down icons ([1364d08](https://github.com/zalando/dress-code/commit/1364d08))
+* **icons:** Add up and down icons ([521465e](https://github.com/zalando/dress-code/commit/521465e))
+* **messages:** Align colors of messages and toasts ([2fd1a39](https://github.com/zalando/dress-code/commit/2fd1a39)), closes [#250](https://github.com/zalando/dress-code/issues/250)
+* **modernizr:** Remove modernizr classes ([a7a02dd](https://github.com/zalando/dress-code/commit/a7a02dd))
+* **modernizr:** Remove modernizr from demo. Close [#141](https://github.com/zalando/dress-code/issues/141) ([d397de9](https://github.com/zalando/dress-code/commit/d397de9))
+* **pagination:** add pagination molecule ([b500223](https://github.com/zalando/dress-code/commit/b500223)), closes [#224](https://github.com/zalando/dress-code/issues/224)
+* **search:** Add clear icon for search. ([ca94228](https://github.com/zalando/dress-code/commit/ca94228)), closes [#200](https://github.com/zalando/dress-code/issues/200)
+* **select-error-state:** [#236](https://github.com/zalando/dress-code/issues/236) add error state to select atom ([5d8783f](https://github.com/zalando/dress-code/commit/5d8783f))
+* **side-revealer:** Add new molecule to give the ability to have main content and sub content in the side ([8675f32](https://github.com/zalando/dress-code/commit/8675f32))
+* **side-revealer:** Add new molecule to give the ability to have main content and sub content in the side ([bd08f6c](https://github.com/zalando/dress-code/commit/bd08f6c))
+* **side-revealer:** Add new molecule to give the ability to have main content and sub content in the side ([2341a3e](https://github.com/zalando/dress-code/commit/2341a3e))
+* **table:** Add hover effect to sorter arrows ([9e1faca](https://github.com/zalando/dress-code/commit/9e1faca))
+* **tables:** Add hover effect and pointer cursor to th ([a466782](https://github.com/zalando/dress-code/commit/a466782))
+* **tables:** Add sortable header. ([4dfd2e4](https://github.com/zalando/dress-code/commit/4dfd2e4)), closes [#223](https://github.com/zalando/dress-code/issues/223)
+* **tables:** Match sorter style used in production ([ece85f4](https://github.com/zalando/dress-code/commit/ece85f4))
+
+
+### BREAKING CHANGES
+
+* drop node 0.12.x support
+
+
+
 <a name="2.0.0-beta"></a>
 # [2.0.0-beta](https://github.com/zalando/dress-code/compare/2.0.0-alpha...v2.0.0-beta) (2016-06-23)
 

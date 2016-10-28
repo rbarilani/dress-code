@@ -22,10 +22,6 @@ Chrome 48+, Firefox 44+, Safari 8+, IE 10+.
 
 ## Getting Started
 
-### Requirements
-
-* [modernizer](https://modernizr.com/) ~2.8.2 included in the ```<head>``` of your web page.
-
 ### Install
 
 #### with Bower
