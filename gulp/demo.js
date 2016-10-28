@@ -147,7 +147,6 @@ gulp.task('demo:deploy', ['demo:build'], function () {
         .pipe(debug())
         .pipe(ghPages({
             push: gutil.env['dry-run'] ? false : true,
-            cacheDir: '.tmp/deploy-demo',
-            remoteUrl: 'git@github.com:zalando/dress-code.git'
+            cacheDir: '.tmp/deploy-demo'
         }));
 });
