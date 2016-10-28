@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="f-menu-active">
 <head>
 
 	<meta charset="utf-8">
@@ -9,17 +9,17 @@
 
 
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,500,300italic|Ubuntu+Mono" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="/dress-code/assets/styles/main.css">
+	<link rel="stylesheet" href="/assets/styles/main.css">
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <link rel="icon" href="favicon.ico">
 </head>
 <body class="dc-body--demo-breakpoints">
+
 		<header class="f-header">
-			<img class="f-logo" src="/dress-code/assets/img/zalando-logo.svg" alt="Zalando Logo">
+			<img class="f-logo" src="/assets/img/zalando-logo.svg" alt="Zalando">
 			<div class="f-control f-menu-toggle">
 			    <i class="dc-icon dc-icon--menu"></i>
 			</div>
@@ -115,10 +115,10 @@
 							<a href="03-atoms.html#card">Card</a>
 						</li>
 						<li>
-							<a href="03-atoms.html#checkboxes">Checkboxes</a>
+							<a href="03-atoms.html#divider">Divider</a>
 						</li>
 						<li>
-							<a href="03-atoms.html#divider">Divider</a>
+							<a href="03-atoms.html#forms">Forms</a>
 						</li>
 						<li>
 							<a href="03-atoms.html#icons">Icons</a>
@@ -136,25 +136,16 @@
 							<a href="03-atoms.html#paragraph">Paragraph</a>
 						</li>
 						<li>
-							<a href="03-atoms.html#radio-button">Radio Button</a>
-						</li>
-						<li>
-							<a href="03-atoms.html#select">Select</a>
-						</li>
-						<li>
 							<a href="03-atoms.html#spinner">Spinner</a>
 						</li>
 						<li>
 							<a href="03-atoms.html#status">Status</a>
 						</li>
 						<li>
-							<a href="03-atoms.html#table">Table</a>
+							<a href="03-atoms.html#tables">Tables</a>
 						</li>
 						<li>
-							<a href="03-atoms.html#text-input">Text Input</a>
-						</li>
-						<li>
-							<a href="03-atoms.html#textarea">Textarea</a>
+							<a href="03-atoms.html#tooltip">Tooltip</a>
 						</li>
 					</ul>
 				</li>
@@ -177,19 +168,33 @@
 							<a href="04-molecules.html#05-search-form">Search Form</a>
 						</li>
 						<li>
-							<a href="04-molecules.html#06-tooltip">Tooltip</a>
-						</li>
-						<li>
 							<a href="04-molecules.html#07-dialog">Dialog</a>
 						</li>
 						<li>
-							<a href="04-molecules.html#08-toast">Toast</a>
+							<a href="04-molecules.html#08-side-revealer">Side Revealer</a>
 						</li>
 						<li>
-							<a href="04-molecules.html#09-messages">Messages</a>
+							<a href="04-molecules.html#09-toast">Toast</a>
 						</li>
 						<li>
-							<a href="04-molecules.html#10-breadcrumb">Breadcrumb</a>
+							<a href="04-molecules.html#10-messages">Messages</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#11-breadcrumb">Breadcrumb</a>
+						</li>
+						<li>
+							<a href="04-molecules.html#12-pagination">Pagination</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="05-guidelines.html" class="f-menu__heading">Guidelines</a>
+					<ul>
+						<li>
+							<a href="05-guidelines.html#01-date-time-format">Date Time Format</a>
+						</li>
+						<li>
+							<a href="05-guidelines.html#02-number-format">Number Format</a>
 						</li>
 					</ul>
 				</li>
@@ -222,7 +227,7 @@
 <h1 class="dc-h1" data-f-toggle="labels">Dress Code Grid</h1>
 
 
-<div class="f-item-group" id="01-Grid">
+<div class="f-item-group f-item-grouped_groups" id="01-Grid">
 
 	<div class="f-item-heading-group">
 		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Grid</h2>
@@ -279,29 +284,29 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, eveniet.
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, repudiandae.
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, ut.
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, animi.
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, cum.
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -329,7 +334,7 @@
 
 </div>
 <div class="f-item-preview">
-	<h3>Shrink one column</h3>
+	<h3 class="dc-h3">Shrink one column</h3>
 <div class="dc-row">
 	<div class="dc-column dc-column--shrink">
 		<div class="dc-column__contents">
@@ -343,7 +348,7 @@
 	</div>
 </div>
 
-<h3>Shrink two columns</h3>
+<h3 class="dc-h3">Shrink two columns</h3>
 <div class="dc-row">
 	<div class="dc-column dc-column--shrink">
 		<div class="dc-column__contents">
@@ -362,7 +367,7 @@
 	</div>
 </div>
 
-<h3>Shrinking first column with two more columns to fill up the space:</h3>
+<h3 class="dc-h3">Shrinking first column with two more columns to fill up the space</h3>
 <div class="dc-row">
 	<div class="dc-column dc-column--shrink">
 		<div class="dc-column__contents">
@@ -382,53 +387,53 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;h3&gt;Shrink one column&lt;/h3&gt;
-&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--shrink&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;Shrink one column&lt;/h3&gt;
+&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--shrink&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			This column shrinks
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			This Column fills up the space
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h3&gt;Shrink two columns&lt;/h3&gt;
-&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--shrink&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+&lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;Shrink two columns&lt;/h3&gt;
+&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--shrink&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			This column shrinks
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--shrink&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--shrink&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			This shrinks as well!
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			This one fills the reamaining space
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h3&gt;Shrinking first column with two more columns to fill up the space:&lt;/h3&gt;
-&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--shrink&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+&lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;Shrinking first column with two more columns to fill up the space&lt;/h3&gt;
+&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--shrink&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			This column shrinks
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			These Other two columns...
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			... take the remaininig space equally!
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -478,15 +483,15 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--large-4 dc-column--medium-12&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;Column large-4 / medium-12&lt;/div&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--large-4 dc-column--medium-12&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;Column large-4 / medium-12&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--large-4 dc-column--medium-12&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;Column large-4 / medium-12&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--large-4 dc-column--medium-12&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;Column large-4 / medium-12&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--large-4 dc-column--medium-12&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;Column large-4 / medium-12&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--large-4 dc-column--medium-12&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;Column large-4 / medium-12&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -630,127 +635,127 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-10&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;10&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;3&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-9&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;9&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-10&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;10&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-4&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;4&lt;/div&gt;
+&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;3&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-8&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;8&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-5&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;5&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-7&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;7&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-9&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;9&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-6&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;6&lt;/div&gt;
+&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-4&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;4&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-6&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;6&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-4&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;4&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-4&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;4&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-4&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;4&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-8&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;8&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;3&lt;/div&gt;
+&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-5&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;5&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;3&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;3&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;3&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-7&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;7&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
+&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-6&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;6&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-6&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;6&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-4&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;4&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-4&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;4&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-4&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;4&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;3&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;3&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;3&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;3&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-1&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;2&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-1&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;1&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -778,7 +783,7 @@
 </div>
 <div class="f-item-preview">
 	<h3 class="dc-h3">
-  Offset first column by 3 columns only on large and huge screens:
+	Offset first column by 3 columns only on large and huge screens:
 </h3>
 <div class="dc-row">
 	<div class="dc-column dc-column--small-2 dc-column-offset--large-3">
@@ -840,63 +845,63 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;h3 class=&quot;dc-h3&quot;&gt;
-  Offset first column by 3 columns only on large and huge screens:
+	<pre class="dc-pre"><code class="language-markup">&lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;
+	Offset first column by 3 columns only on large and huge screens:
 &lt;/h3&gt;
-&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2 dc-column-offset--large-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2 dc-column-offset--large-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;
 			2
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;
 			2
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;
 			2
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;h3 class=&quot;dc-h3&quot;&gt;Offset last column by 2 columns on all sizes&lt;/h3&gt;
-&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+&lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;Offset last column by 2 columns on all sizes&lt;/h3&gt;
+&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;
 			2
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;
 			2
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2 dc-column-offset--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2 dc-column-offset--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;
 			2
 		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
-&lt;h3 class=&quot;dc-h3&quot;&gt;No offset on large and huge screens, offset by 2 columns on medium&lt;/h3&gt;
-&lt;p class=&quot;dc-p&quot;&gt;
+&lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;No offset on large and huge screens, offset by 2 columns on medium&lt;/h3&gt;
+&lt;p class&#x3D;&quot;dc-p&quot;&gt;
 	Offsets are applied from the breakpoint used + higher. This means that an offset applied for medium size will apply for medium, large, and, huge screen sizes. To remove an offset for higher screen sizes, an offset of &#x60;0&#x60; can be applied, as shown below.
 	Resize the screen to see how offsets are applied and removed.
 &lt;/p&gt;
-&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2 dc-column-offset--medium-2 dc-column-offset--large-0&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2 dc-column-offset--medium-2 dc-column-offset--large-0&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;
 			2
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;
 			2
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents dc-column__contents--center&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents dc-column__contents--center&quot;&gt;
 			2
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -950,24 +955,24 @@
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--collapse&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-row--collapse&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, eveniet.
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, repudiandae.
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, ut.
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, animi.
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -1000,12 +1005,12 @@ which has 4 equally sized columns inside.</p>
 	<div class="dc-row">
 	<div class="dc-column dc-column--small-3">
 		<div class="dc-column__contents">
-			<h4>Column 1</h4>
+			<span class="dc-strong">Column 1</span>
 		</div>
 	</div>
 	<div class="dc-column dc-column--small-9">
 		<div class="dc-column__contents">
-			<h4>Column 2</h4>
+			<span class="dc-strong">Column 2</span>
 			<div class="dc-row">
 				<div class="dc-column">
 					<div class="dc-column__contents">
@@ -1033,33 +1038,33 @@ which has 4 equally sized columns inside.</p>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
-			&lt;h4&gt;Column 1&lt;/h4&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+			&lt;span class&#x3D;&quot;dc-strong&quot;&gt;Column 1&lt;/span&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-9&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
-			&lt;h4&gt;Column 2&lt;/h4&gt;
-			&lt;div class=&quot;dc-row&quot;&gt;
-				&lt;div class=&quot;dc-column&quot;&gt;
-					&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-9&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
+			&lt;span class&#x3D;&quot;dc-strong&quot;&gt;Column 2&lt;/span&gt;
+			&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+				&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+					&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 						Nested Column 1
 					&lt;/div&gt;
 				&lt;/div&gt;
-				&lt;div class=&quot;dc-column&quot;&gt;
-					&lt;div class=&quot;dc-column__contents&quot;&gt;
+				&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+					&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 						Nested Column 2
 					&lt;/div&gt;
 				&lt;/div&gt;
-				&lt;div class=&quot;dc-column&quot;&gt;
-					&lt;div class=&quot;dc-column__contents&quot;&gt;
+				&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+					&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 						Nested Column 3
 					&lt;/div&gt;
 				&lt;/div&gt;
-				&lt;div class=&quot;dc-column&quot;&gt;
-					&lt;div class=&quot;dc-column__contents&quot;&gt;
+				&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+					&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 						Nested Column 4
 					&lt;/div&gt;
 				&lt;/div&gt;
@@ -1112,21 +1117,21 @@ which has 4 equally sized columns inside.</p>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-block-grid--small-1 dc-block-grid--medium-3 dc-block-grid--large-5&quot;&gt;
-	&lt;div class=&quot;dc-column&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quisquam, sit a.&lt;/div&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-block-grid--small-1 dc-block-grid--medium-3 dc-block-grid--large-5&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quisquam, sit a.&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt maxime aut recusandae.&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt maxime aut recusandae.&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ratione hic, obcaecati!&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ratione hic, obcaecati!&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eum, error soluta.&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eum, error soluta.&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, ab. Libero, deserunt.&lt;/div&gt;
+	&lt;div class&#x3D;&quot;dc-column&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, ab. Libero, deserunt.&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -1136,7 +1141,7 @@ which has 4 equally sized columns inside.</p>
 </div>
 
 
-<div class="f-item-group" id="02-horizontal-alignment">
+<div class="f-item-group f-item-grouped_groups" id="02-horizontal-alignment">
 
 	<div class="f-item-heading-group">
 		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Horizontal Alignment</h2>
@@ -1180,19 +1185,19 @@ which has 4 equally sized columns inside.</p>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--align--center&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-row--align--center&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam possimus reprehenderit minima. Vitae expedita eos temporibus perspiciatis repellendus ipsam necessitatibus!
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -1239,19 +1244,19 @@ which has 4 equally sized columns inside.</p>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--align--right&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-row--align--right&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam possimus reprehenderit minima. Vitae expedita eos temporibus perspiciatis repellendus ipsam necessitatibus!
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -1298,19 +1303,19 @@ which has 4 equally sized columns inside.</p>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--align--spaced&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-row--align--spaced&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam possimus reprehenderit minima. Vitae expedita eos temporibus perspiciatis repellendus ipsam necessitatibus!
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -1369,31 +1374,31 @@ which has 4 equally sized columns inside.</p>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--align--justify&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-row--align--justify&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam possimus reprehenderit minima. Vitae expedita eos temporibus perspiciatis repellendus ipsam necessitatibus!
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
 		&lt;/div&gt;
 	&lt;/div&gt;
 
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
 		&lt;/div&gt;
 	&lt;/div&gt;
 
-	&lt;div class=&quot;dc-column dc-column--small-2&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-2&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit minima delectus, pariatur molestias, dolorum odit totam quasi sit magni beatae.
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -1405,7 +1410,7 @@ which has 4 equally sized columns inside.</p>
 </div>
 
 
-<div class="f-item-group" id="03-vertical-alignment">
+<div class="f-item-group f-item-grouped_groups" id="03-vertical-alignment">
 
 	<div class="f-item-heading-group">
 		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Vertical Alignment</h2>
@@ -1454,24 +1459,24 @@ which has 4 equally sized columns inside.</p>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--align--top&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-row--align--top&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -1523,24 +1528,24 @@ which has 4 equally sized columns inside.</p>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--align--middle&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-row--align--middle&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -1592,24 +1597,24 @@ which has 4 equally sized columns inside.</p>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row dc-row--align--bottom&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row dc-row--align--bottom&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo eveniet inventore voluptatibus aliquid debitis laboriosam magni cupiditate possimus facere?
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ducimus cumque vero!
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -1665,24 +1670,24 @@ which has 4 equally sized columns inside.</p>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;div class=&quot;dc-row&quot;&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;div class&#x3D;&quot;dc-row&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quaerat totam, repellendus, consequuntur officia illo similique pariatur, esse eos magnam exercitationem aut rem commodi.
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3 dc-column--align-self--bottom&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3 dc-column--align-self--bottom&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			This column is bottom-aligned
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3 dc-column--align-self--top&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3 dc-column--align-self--top&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			This column is top-aligned
 		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;dc-column dc-column--small-3 dc-column--align-self--middle&quot;&gt;
-		&lt;div class=&quot;dc-column__contents&quot;&gt;
+	&lt;div class&#x3D;&quot;dc-column dc-column--small-3 dc-column--align-self--middle&quot;&gt;
+		&lt;div class&#x3D;&quot;dc-column__contents&quot;&gt;
 			This column is aligned at the middle
 		&lt;/div&gt;
 	&lt;/div&gt;
@@ -1695,7 +1700,7 @@ which has 4 equally sized columns inside.</p>
 </div>
 
 
-<div class="f-item-group" id="04-scss-reference">
+<div class="f-item-group f-item-grouped_groups" id="04-scss-reference">
 
 	<div class="f-item-heading-group">
 		<h2 class="dc-h2 f-item-heading" data-f-toggle="labels">Scss Reference</h2>
@@ -1721,7 +1726,7 @@ which has 4 equally sized columns inside.</p>
 </div>
 <div class="f-item-preview">
 	<h3 class="dc-h3">
-  dc-grid-row
+	dc-grid-row
 </h3>
 
 <p class="dc-p">
@@ -1749,7 +1754,7 @@ which has 4 equally sized columns inside.</p>
 
 
 <h3 class="dc-h3">
-  dc-grid-column
+	dc-grid-column
 </h3>
 
 <p class="dc-p">
@@ -1782,7 +1787,7 @@ which has 4 equally sized columns inside.</p>
 </table>
 
 <h3 class="dc-h3">
-  dc-block-grid
+	dc-block-grid
 </h3>
 
 <p class="dc-p">
@@ -1815,7 +1820,7 @@ which has 4 equally sized columns inside.</p>
 </table>
 
 <h3 class="dc-h3">
-  grid-column-flex
+	grid-column-flex
 </h3>
 
 <p class="dc-p">
@@ -1841,7 +1846,7 @@ which has 4 equally sized columns inside.</p>
 </table>
 
 <h3 class="dc-h3">
-  grid-column-size
+	grid-column-size
 </h3>
 
 <p class="dc-p">
@@ -1868,149 +1873,149 @@ which has 4 equally sized columns inside.</p>
 </table>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;h3 class=&quot;dc-h3&quot;&gt;
-  dc-grid-row
+	<pre class="dc-pre"><code class="language-markup">&lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;
+	dc-grid-row
 &lt;/h3&gt;
 
-&lt;p class=&quot;dc-p&quot;&gt;
+&lt;p class&#x3D;&quot;dc-p&quot;&gt;
 	Mixin for creating a row. &lt;br&gt; Sets the margin for row based on the gutter space per breakpoint.
 &lt;/p&gt;
 
-&lt;table class=&quot;dc-table&quot;&gt;
-	&lt;thead class=&quot;dc-table__thead&quot;&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Parameter&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
+&lt;table class&#x3D;&quot;dc-table&quot;&gt;
+	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Parameter&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
 		&lt;/tr&gt;
 	&lt;/thead&gt;
-	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;$gutter&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;Map&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;$dc-grid-gutter&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;A Map of gutter values for different breakpoint sizes. See default values under Variables (below).&lt;/td&gt;
+	&lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;$gutter&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Map&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;$dc-grid-gutter&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;A Map of gutter values for different breakpoint sizes. See default values under Variables (below).&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
 
 
-&lt;h3 class=&quot;dc-h3&quot;&gt;
-  dc-grid-column
+&lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;
+	dc-grid-column
 &lt;/h3&gt;
 
-&lt;p class=&quot;dc-p&quot;&gt;
+&lt;p class&#x3D;&quot;dc-p&quot;&gt;
 	Mixin for creating a column. &lt;br&gt; Sets the flex value for the column &lt;br&gt; Sets the padding for column based on the gutter space per breakpoint.
 &lt;/p&gt;
 
-&lt;table class=&quot;dc-table&quot;&gt;
-	&lt;thead class=&quot;dc-table__thead&quot;&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Parameter&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
+&lt;table class&#x3D;&quot;dc-table&quot;&gt;
+	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Parameter&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
 		&lt;/tr&gt;
 	&lt;/thead&gt;
-	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;$columns&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;null | Number&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;null&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;Size (or span) of the column.&lt;/td&gt;
+	&lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;$columns&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;null | Number&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;null&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Size (or span) of the column.&lt;/td&gt;
 		&lt;/tr&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;$gutter&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;Map&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;$dc-grid-gutter&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;A Map of gutter values for different breakpoint sizes. See default values under Variables (below).&lt;/td&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;$gutter&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Map&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;$dc-grid-gutter&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;A Map of gutter values for different breakpoint sizes. See default values under Variables (below).&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h3 class=&quot;dc-h3&quot;&gt;
-  dc-block-grid
+&lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;
+	dc-block-grid
 &lt;/h3&gt;
 
-&lt;p class=&quot;dc-p&quot;&gt;
+&lt;p class&#x3D;&quot;dc-p&quot;&gt;
 	Mixin for creating a block grid. &lt;br&gt; Sets the flex value for the child columns &lt;br&gt;
 &lt;/p&gt;
 
-&lt;table class=&quot;dc-table&quot;&gt;
-	&lt;thead class=&quot;dc-table__thead&quot;&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Parameter&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
+&lt;table class&#x3D;&quot;dc-table&quot;&gt;
+	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Parameter&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
 		&lt;/tr&gt;
 	&lt;/thead&gt;
-	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;$columns&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;Number&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;Number of columns in a row.&lt;/td&gt;
+	&lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;$columns&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Number&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Number of columns in a row.&lt;/td&gt;
 		&lt;/tr&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;$column-selector&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;String&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;&quot;.dc-column&quot;&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;The selector class for columns within the row&lt;/td&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;$column-selector&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;String&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;&quot;.dc-column&quot;&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;The selector class for columns within the row&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h3 class=&quot;dc-h3&quot;&gt;
-  grid-column-flex
+&lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;
+	grid-column-flex
 &lt;/h3&gt;
 
-&lt;p class=&quot;dc-p&quot;&gt;
+&lt;p class&#x3D;&quot;dc-p&quot;&gt;
 	Function for calculating flex property value for a column. &lt;br&gt; Returns flex property value based on the number of columns supplied.
 &lt;/p&gt;
-&lt;table class=&quot;dc-table&quot;&gt;
-	&lt;thead class=&quot;dc-table__thead&quot;&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Parameter&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
+&lt;table class&#x3D;&quot;dc-table&quot;&gt;
+	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Parameter&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
 		&lt;/tr&gt;
 	&lt;/thead&gt;
-	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;$columns&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;null | Number&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;null&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;Size (or span) of the column.&lt;/td&gt;
+	&lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;$columns&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;null | Number&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;null&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Size (or span) of the column.&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h3 class=&quot;dc-h3&quot;&gt;
-  grid-column-size
+&lt;h3 class&#x3D;&quot;dc-h3&quot;&gt;
+	grid-column-size
 &lt;/h3&gt;
 
-&lt;p class=&quot;dc-p&quot;&gt;
+&lt;p class&#x3D;&quot;dc-p&quot;&gt;
 	Function for calculating the width of a column in percentage. &lt;br&gt; Returns percentage value of a column in relation to the total number of columns
 &lt;/p&gt;
 
-&lt;table class=&quot;dc-table&quot;&gt;
-	&lt;thead class=&quot;dc-table__thead&quot;&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Parameter&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
+&lt;table class&#x3D;&quot;dc-table&quot;&gt;
+	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Parameter&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
 		&lt;/tr&gt;
 	&lt;/thead&gt;
-	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;$columns&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;Number&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;Size (or span) of the column.&lt;/td&gt;
+	&lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;$columns&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Number&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Size (or span) of the column.&lt;/td&gt;
 		&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
@@ -2071,33 +2076,33 @@ which has 4 equally sized columns inside.</p>
 </table>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre class="dc-pre"><code class="language-markup">&lt;table class=&quot;dc-table&quot;&gt;
-	&lt;thead class=&quot;dc-table__thead&quot;&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Variable&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
-			&lt;th class=&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
+	<pre class="dc-pre"><code class="language-markup">&lt;table class&#x3D;&quot;dc-table&quot;&gt;
+	&lt;thead class&#x3D;&quot;dc-table__thead&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Variable&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Type&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Default&lt;/th&gt;
+			&lt;th class&#x3D;&quot;dc-table__th&quot;&gt;Description&lt;/th&gt;
 		&lt;/tr&gt;
 	&lt;/thead&gt;
-	&lt;tbody class=&quot;dc-table__tbody&quot;&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;$dc-grid-column-count&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;Number&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;12&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;Number of total columns in the grid.&lt;/td&gt;
+	&lt;tbody class&#x3D;&quot;dc-table__tbody&quot;&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;$dc-grid-column-count&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Number&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;12&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Number of total columns in the grid.&lt;/td&gt;
 		&lt;/tr&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;$dc-grid-gutter&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;Map&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;(small: 16px, medium: 24px, large: 32px)&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;Gutter size at different breakpoints.&lt;/td&gt;
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;$dc-grid-gutter&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Map&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;(small: 16px, medium: 24px, large: 32px)&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Gutter size at different breakpoints.&lt;/td&gt;
 		&lt;/tr&gt;
-		&lt;tr class=&quot;dc-table__tr&quot;&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;$dc-grid-breakpoints&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;Map&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;(small: 20em, medium: 37.5em, large: 64em, huge: 80em)&lt;/td&gt;
-			&lt;td class=&quot;dc-table__td&quot;&gt;Breakpoint sizes.
+		&lt;tr class&#x3D;&quot;dc-table__tr&quot;&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;$dc-grid-breakpoints&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Map&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;(small: 20em, medium: 37.5em, large: 64em, huge: 80em)&lt;/td&gt;
+			&lt;td class&#x3D;&quot;dc-table__td&quot;&gt;Breakpoint sizes.
 				&lt;br&gt;The names of column classes are based on these breakpoint names.
 				&lt;br&gt;This bloats the generated CSS so use only what you need.&lt;/td&gt;
 		&lt;/tr&gt;
@@ -2114,7 +2119,7 @@ which has 4 equally sized columns inside.</p>
 		</div>
 		<div class="dc-grid"></div>
 
-		<script src="/dress-code/assets/scripts/main.js"></script>
+		<script src="/assets/scripts/main.js"></script>
 
 </body>
 </html>

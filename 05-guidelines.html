@@ -224,194 +224,131 @@
 
 
 	
-<h1 class="dc-h1 f-dc-h1--view-title" data-f-toggle="labels">Docs</h1>
+<h1 class="dc-h1" data-f-toggle="labels">Guidelines</h1>
 
 
-<div class="f-item-group">
-	<h2 class="dc-h2" id="CODING"><a class="dc-link" href="#CODING">Coding</a></h2>
-	<h1>Coding Conventions and Guidelines</h1>
-<h2>Coding conventions:</h2>
-<ul>
-<li>We use the <a href="http://getbem.com/introduction/">BEM</a> approach to write css.</li>
-<li>Every css class must be prefixed with <code>dc-</code>.</li>
-</ul>
-<h2>Sass conventions:</h2>
-<ul>
-<li>All variables and mixins must be prefixed with <code>dc-</code> and must use the <strong><em>hyphen-case</em></strong> (with hyphens as separators).</li>
-<li>To mark a function/variable/mixins/placeholder/selector as private, its name should start with one underscore. <code>_dc-*</code></li>
-</ul>
-<h2>Notes</h2>
-<h3>Future compatibility</h3>
-<p>Each atom/molecules/module is prepared to be independently loaded, by requiring its own dependencies.
-So you will notice at the top of each file a commented import directive, something like this:</p>
-<pre><code class="language-scss">
-// @import &quot;../core/core&quot;;
+<div class="f-item-group f-item-grouped_groups" id="01-date-time-format">
 
-@mixin dc-checkbox($sibling-label-selector : &quot;.dc-label&quot;) {
-    // ...
-}
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+		<h2 class="dc-h2 f-item-heading">Date Time Format</h2>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Dress code date and time format is currently based on British locale (en-gb). If in your application you use localization, we suggest to adapt the formats accordingly.</p>
 
-</code></pre>
-<p>We hope that sass 4 brings us a new cool import directive that works as the less one (import once by default).
-We are not the only one requesting that <a href="https://github.com/sass/sass/issues/156">feature</a></p>
+</div>
+<div class="f-item-preview">
+	<h3 class="dc-h3 f-item-heading">Date</h3>
+<label class="dc-label">Full</label>
+<p class="dc-h4">Mon, 05 Sep 2016</p>
+
+<label class="dc-label">Normal</label>
+<p class="dc-h4">05 Sep 2016</p>
+
+<label class="dc-label">Short Day</label>
+<p class="dc-h4">05 Sep</p>
+
+<label class="dc-label">Short Month</label>
+<p class="dc-h4">Sep 2016</p>
+
+<h3 class="dc-h3 f-item-heading">Time</h3>
+<label class="dc-label">24 Hours</label>
+<p class="dc-h4">06:39</p>
+
+<h3 class="dc-h3 f-item-heading">Date &amp; Time</h3>
+<label class="dc-label">Full</label>
+<p class="dc-h4">Thu, 22 Dec 2016 20:04</p>
+
+<label class="dc-label">Normal</label>
+<p class="dc-h4">22 Dec 2016 20:04</p>
+
+<label class="dc-label">Short</label>
+<p class="dc-h4">22 Dec 20:04</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Date&lt;/h3&gt;
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;Full&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;Mon, 05 Sep 2016&lt;/p&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;Normal&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;05 Sep 2016&lt;/p&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;Short Day&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;05 Sep&lt;/p&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;Short Month&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;Sep 2016&lt;/p&gt;
+
+&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Time&lt;/h3&gt;
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;24 Hours&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;06:39&lt;/p&gt;
+
+&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Date &amp;amp; Time&lt;/h3&gt;
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;Full&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;Thu, 22 Dec 2016 20:04&lt;/p&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;Normal&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;22 Dec 2016 20:04&lt;/p&gt;
+
+&lt;label class&#x3D;&quot;dc-label&quot;&gt;Short&lt;/label&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;22 Dec 20:04&lt;/p&gt;</code></pre>
+</div>
+
 
 </div>
 
 
-<div class="f-item-group">
-	<h2 class="dc-h2" id="CONTRIBUTING"><a class="dc-link" href="#CONTRIBUTING">Contributing</a></h2>
-	<h1>Contributing to Dress Code</h1>
-<h2>Git workflow</h2>
-<p>The git workflow that we use to contribute is mostly based and well explained in this article: <a href="http://nvie.com/posts/a-successful-git-branching-model/">a-successful-git-branching-model</a></p>
-<h4>Main branches:</h4>
-<ul>
-<li><strong>master</strong> : must point to the latest stable version</li>
-<li><strong>develop</strong>: the main development branch, never work on it directly, always merge <strong><em>topic</em></strong> branches and <strong><em>hotfix</em></strong> branches into this branch.</li>
-<li><strong>topic/[topic-name]</strong>: for every new feature or task, open a <strong><em>topic</em></strong> branch from <strong><em>develop</em></strong> and work on it, when you are done open a pull request and ask for review.</li>
-<li><strong>hotfix/[hotifx-name]</strong>: used to fix stable versions</li>
-<li><strong>release/[release-name]</strong>: used to work on release candidates</li>
-</ul>
-<blockquote>
-<p>If a github issue is related to a branch we suggest to append the number at the end of the branch name.<br>
-example: topic/dropdown-refactor-98</p>
-</blockquote>
-<h2><a name="commit"></a> Git Commit Guidelines</h2>
-<p>We have very precise rules over how our git commit messages can be formatted. This leads to <strong>more
-readable messages</strong> that are easy to follow when looking through the <strong>project history</strong>. It is
-important to note that we use the git commit messages to <strong>generate</strong> the Dress Code
-<a href="../../CHANGELOG.md">Changelog</a> document.</p>
-<blockquote>
-<p>A detailed explanation of guidelines and conventions can be found in this
-<a href="https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#">document</a>.</p>
-</blockquote>
-<h3><a name="commit-message-format"></a> Commit Message Format</h3>
-<p>Each commit message consists of a <strong>header</strong>, a <strong>body</strong> and a <strong>footer</strong>. The header has a special
-format that includes a <strong>type</strong>, a <strong>scope</strong> and a <strong>subject</strong>:</p>
-<pre><code class="language-html">&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;
-&lt;BLANK LINE&gt;
-&lt;body&gt;
-&lt;BLANK LINE&gt;
-&lt;footer&gt;
-</code></pre>
-<blockquote>
-<p>Any line of the commit message cannot be longer 100 characters!<br/>
-This allows the message to be easier to read on github as well as in various git tools.</p>
-</blockquote>
-<h4>Type</h4>
-<p>Must be one of the following:</p>
-<ul>
-<li><strong>feat</strong>: A new feature</li>
-<li><strong>fix</strong>: A bug fix</li>
-<li><strong>docs</strong>: Documentation only changes</li>
-<li><strong>style</strong>: Changes that do not affect the meaning of the code (white-space, formatting, missing
-semi-colons, etc)</li>
-<li><strong>refactor</strong>: A code change that neither fixes a bug nor adds a feature</li>
-<li><strong>perf</strong>: A code change that improves performance</li>
-<li><strong>test</strong>: Adding missing tests</li>
-<li><strong>chore</strong>: Changes to the build process or auxiliary tools and libraries such as documentation
-generation</li>
-</ul>
-<h4>Scope</h4>
-<p>The scope could be anything specifying the place of the commit change.</p>
-<h4>Subject</h4>
-<p>The subject contains succinct description of the change:</p>
-<ul>
-<li>use the imperative, present tense: &quot;change&quot; not &quot;changed&quot; nor &quot;changes&quot;</li>
-<li>don't capitalize first letter</li>
-<li>no dot (.) at the end</li>
-</ul>
-<h4>Body</h4>
-<p>Just as in the <strong>subject</strong>, use the imperative, present tense: &quot;change&quot; not &quot;changed&quot; nor &quot;changes&quot;
-The body should include the motivation for the change and contrast this with previous behavior.</p>
-<h4>Footer</h4>
-<p>The footer should contain any information about <strong>Breaking Changes</strong> and is also the place to
-reference GitHub issues that this commit <strong>Closes</strong>.</p>
-<blockquote>
-<p>Breaking Changes are intended to highlight (in the ChangeLog) changes that will require community
-users to modify their code with this commit.</p>
-</blockquote>
-<br/>
-<h4>Sample Commit message:</h4>
-<pre><code class="language-text">refactor(button): prefix btn class with dc-
+<div class="f-item-group f-item-grouped_groups" id="02-number-format">
 
-    BREAKING CHANGE: btn class now is prefixed with dc namespace.
-
-    Change your code from this:
-
-    ```html
-    &lt;button class=&quot;btn&quot;&gt;submit&lt;/button&gt;
-    ```
-
-    To this:
-
-    ```html
-    &lt;button class=&quot;dc-btn&quot;&gt;submit&lt;/button&gt;
-    ```
-</code></pre>
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg class="dc-svg">
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+		<h2 class="dc-h2 f-item-heading">Number Format</h2>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<p>Dress code number format is currently based on British locale (en-gb). If in your application you use localization, we suggest to adapt the format accordingly. Depending on the number accuracy your application needs, feel free to use 0..N decimals.</p>
 
 </div>
+<div class="f-item-preview">
+	<h3 class="dc-h3 f-item-heading">Number</h3>
+<p class="dc-h4">3,610,156.00</p>
 
+<h3 class="dc-h3 f-item-heading">Percentage</h3>
+<p class="dc-h4">36.40%</p>
 
-<div class="f-item-group">
-	<h2 class="dc-h2" id="RELEASING"><a class="dc-link" href="#RELEASING">Releasing</a></h2>
-	<h1>RELEASING</h1>
-<h3>Step by step instructions to release a new version of the dress-code.</h3>
-<ol>
-<li>From the develop branch, move into a new release branch. The <code>&lt;semver&gt;</code> placeholder stay for a new semantic version (e.g. 0.4.1).
-For more info, please take a look <a href="http://semver.org/">here</a>.</li>
-</ol>
-<pre><code>git checkout -b release/&lt;semver&gt;
-</code></pre>
-<ol start="2">
-<li>Increase <code>bower.json</code> and <code>package.json</code> <semver> version and run the task that updates the changelog.</li>
-</ol>
-<pre><code>npm run changelog
-</code></pre>
-<ol start="3">
-<li>Run the build.</li>
-</ol>
-<pre><code>npm run build
-</code></pre>
-<ol start="4">
-<li>Check the result and if needed adjust the output (<code>CHANGELOG.md</code>).
-When done, commit the changes and push the release branch.</li>
-</ol>
-<pre><code>git add --all;
-git commit -m &quot;chore(release): &lt;semver&gt;&quot;;
-git push -u;
-</code></pre>
-<ol start="5">
-<li><strong>Wait the CI job running on <a href="https://travis-ci.org/zalando/dress-code/builds">Travis</a>.</strong></li>
-</ol>
-<p>When the CI job pass with SUCCESS, merge or rebase the release branch on top of the master branch.</p>
-<pre><code>git checkout master;
-git pull;
-git rebase release/&lt;semver&gt;; # or open a pull request to master
-</code></pre>
-<ol start="6">
-<li>Add a git tag, push the master branch and the new tag.</li>
-</ol>
-<pre><code>git tag -a &lt;semver&gt; -m &quot;&lt;semver&gt;&quot;;
-git push origin master;
-git push origin &lt;semver&gt;; # push the tag
-</code></pre>
-<ol start="7">
-<li>Build and deploy demo <a href="http://zalando.github.io/dress-code/">docs/demo</a> artifacts.</li>
-</ol>
-<pre><code>npm run deploy:demo;
-</code></pre>
-<ol start="8">
-<li>Publish on npm registry.</li>
-</ol>
-<pre><code>npm publish
-</code></pre>
-<ol start="9">
-<li>Keep in sync the develop branch.</li>
-</ol>
-<pre><code>git checkout develop;
-git rebase master; # or git merge
-git push origin develop;
-</code></pre>
+<h3 class="dc-h3 f-item-heading">Currency</h3>
+<p class="dc-h4">&euro;1,439.34</p>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre class="dc-pre"><code class="language-markup">&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Number&lt;/h3&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;3,610,156.00&lt;/p&gt;
+
+&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Percentage&lt;/h3&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;36.40%&lt;/p&gt;
+
+&lt;h3 class&#x3D;&quot;dc-h3 f-item-heading&quot;&gt;Currency&lt;/h3&gt;
+&lt;p class&#x3D;&quot;dc-h4&quot;&gt;&amp;euro;1,439.34&lt;/p&gt;</code></pre>
+</div>
+
 
 </div>
 
